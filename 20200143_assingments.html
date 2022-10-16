@@ -2,9 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>취업 정보 계정 만들기</title>
+    <style>
+        form df {display: inline-block; text-align: right; width: 130px; margin-left: 8px; padding-right: 8px;}
+        form dt {margin-left: 200px;}
+        c {color:red; font-size:10px;}
+        span {font-weight:bold;}
+        div.box {background-color: lightblue; padding-left: 10px;}
+    </style>
 </head>
-<body>
+<body style="line-height: 1.8">
+<h3>취업 정보 계정 만들기</h3>
+<p>
+<c>* 필수 입력 항목</c><br>
+    <div class="box">
+    <span>기본 정보</span></div>
+<p>
+<form>
+    <df>이름<c>*</c></df> <input type="text" size="8" value=""><br>
+    <df>이메일<c>*</c></df> <input type="email" size="15" placeholder="id@domain_name"><br>
+    <df>암호<c>*</c></df> <input type="password" size="12" value=""><br>
+    <df>암호 확인<c>*</c></df> <input type="password" size="12" value=""><br>
+    <df>모바일 폰<c>*</c></df> <input type="tel" size="13" placeholder="010-0000-0000"><br>
+    <df>개인 홈페이지</df> <input type="url" size="30" placeholder="http://"><br>
+    <df>주소<c>*</c></df> <input type="text" size="30" value=""><br>
+</form>
+<p><div class="box">
+    <span>학력</span></div>
+<p>
+<form>
+    <df>학교 명<c>*</c></df> <input type="text" size="30" value=""><br>
+    <df>전공<c>*</c></df> <input type="text" size="12" value=""><br>
+    <df>졸업 여부<c>*</c></df> <select name="graduation">
+    <option value="1" selected>--선택--</option>
+    <option value="2">졸업 예정</option>
+    <option value="3">졸업</option></select><br>
+    <df>졸업(예정)일</df> <input type="date" value="2022-01-01"><br>
+</form>
+<p><div class="box">
+    <span>업무경력</span></div>
+<p>
+<form>
+    <df>근무업체명</df> <input type="text" size="20" value=""><br>
+    <df>직위</df> <input type="text" size="10" value=""><br>
+    <df>담당업무</df>
+    <textarea placeholder="이전 업체에서 담당한 업무를 기술하시오." cols="80" rows="10"></textarea><br>
+    <df>근무년수</df> <input type="number" min="0" max="10" step="1">년<br><br>
+    <div class="box">
+        <span>자기소개서</span></div>
+    <df>첨부파일</df> <input type="file"><br><br>
+    <dt><input type="submit" value="제출">
+        <input type="reset" value="재작성"></dt>
+</form>
 
 </body>
 </html>
