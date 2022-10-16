@@ -1,2 +1,0 @@
-# pythonProject
-hello world
