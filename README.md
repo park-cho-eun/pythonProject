@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>방가루</title>
+    방가루
 </head>
 <body>
 
