@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>과제03-1</title>
+
+<script>
+
+	function report(bin) {
+
+        var bin2 = parseInt(bin, 2).toString(16);
+        var bin3 = parseInt(bin2, 16);
+
+        if (!(bin3 < 16))
+        {
+            document.write("당신이 입력한  " + "<b><mark>" + bin + "</mark></b>" + "은" + " <b>2진수</b>가 아닙니다. <br> 다시 입력하세요.");
+        } else {
+
+            document.write("변환된 <b>16진수</b>는 " + "<b><mark>" + " " + bin2 + "</mark></b>" + "입니다.");
+        }
+
+    }
+
+
+</script>
+<style>
+    div {
+        margin-top: 30px;
+    }
+</style>
+
+</head>
+<body>
+    <h3>JavaScript 함수 만들기</h3>
+    <hr>
+    <div>
+<script>
+
+var n = prompt("2진수를 입력하시면, 16진수로 바꾸겠습니다.", '0');
+report(n);
+
+</script>
+    </div>
+</body>
+</html>
