@@ -2,9 +2,245 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    방가루
+    <title>Title</title>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+      body {font-family: 나눔스퀘어; background-color: darkseagreen;}
+      div.box { height: 350px;}
+      li.tit {font-weight: bold;}
+      #about {background-color: white;}
+      #portfolio {background-color: white;}
+      .carousel-item:before {
+    -webkit-box-shadow: inset 0 0 10rem rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 10rem rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+}
+    </style>
 </head>
+
 <body>
+  <nav class='navbar navbar-light navbar-expand-md font-weight-bold text-uppercase bg-light navbar-light fixed-top' id="nav">
+    <div class="container">
+      <a class="navbar-brand" href="photopolio.html">
+        <p class="fs-3 fw-bolder mt-3">Park Cho Eun</p></a>
+      <button class="'navbar-toggler navbar-toggler-end bg-light btn-outline-light" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation" id="btn1">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#box">intro</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">about</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">skills</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">portfolios</a></li>
+          <li class="nav-item">
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="box" id="box">
+    <div class="container">
+      <h1 style="margin-top: 300px; margin-bottom: 50px; text-align: right;">철학하는 데이터 엔지니어<br>개발자 박초은입니다.</h1></div>
+  </div>
+
+<div class="'container p-5" id="about">
+  <div class="row" style="margin-top: 100px;">
+    <div class="col-sm-4">
+       <ul class="list-unstyled pb-5">
+        <li style="text-align: center; margin-bottom: 30px"><image style="border-radius: 30%;" src="https://i.ibb.co/5cGrcr6/Kakao-Talk-20221227-204235071.jpg" height="250"></image></li>
+         <li style="text-align: center;">
+           <a href="www.linkedin.com/in/parkchoeun/" style="margin: 10px"><image src="https://www.pngfind.com/pngs/b/36-369191_social-icon-png.png" height="40"></image></a>
+           <a href="tel:01094464534" style="margin: 10px"><image src="data:image/png;base64,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" height="40"></image></a>
+           <a href="mailto:clstmisto@daum.net" style="margin: 10px"><image src="https://rewindwithrehana.files.wordpress.com/2020/01/20200112_1745327933841445438109386-e1579551236947.png?w=584" height="40"></image></a>
+         </li></ul>
+    </div>
+
+    <div class="col-sm-4 px-3">
+      <ul class="list-unstyled pb-5">
+        <li class="tit">EDUCATION</li>
+        <li>2014.03 ~ 2017.02 북원여자고등학교 </li>
+        <li>2020.03 ~ 동덕여자대학교 정보통계학/영어학</li>
+      </ul>
+
+      <ul class="list-unstyled pb-5">
+        <li class="tit">EXPERIENCES</li>
+        <li>2020.09 ~ 2021.05 초석학원, 동보영어학원 영어강사 </li>
+        <li>2022.07 ~ 08 (주)이씨오 인턴십 컨텐츠 제작 및 IT업무 </li>
+      </ul>
+
+      <ul class="list-unstyled pb-5">
+        <li class="tit">EXTRA-ACTIVITIES</li>
+        <li>2022.04 ~ 08 DACL(Dongduk AI Learning Crew) 교내 동아리</li>
+        <li>2022.03 ~ 12 블룸버그 코리아 멘토링 프로그램 </li>
+      </ul>
+
+    </div>
+    <div class="col-sm-4 px-3">
+      <ul class="list-unstyled pb-5">
+        <li class="tit">AWARD & SCHOLARSHIP</li>
+        <li>2020.02 동덕여대 정시전형 단과대학 수석 입학 </li>
+        <li>2020.08 동덕여대 수업 에세 공모전 동상 수상</li>
+        <li>2022.09 DALC 팀별 프로젝트 최우수상 수상</li>
+        <li>2022.11 KOPIS 빅데이터 분석 공모전 입상</li>
+      </ul>
+
+      <ul class="list-unstyled pb-5">
+        <li class="tit">PROJECTS</li>
+        <li>포스터 기반 영화 흥행 예측 시스템</li>
+        <li>영상콘텐츠 취향분석 바탕의 도서 추천 시스템</li>
+        <li>마스크 착용 자동 감지 시스템</li>
+        <li>리뷰를 통한 왓챠 데이터 마케팅 전략 분석</li></ul>
+    </div>
+  </div>
+</div>
+
+  <div class="'container p-5" id="skills" style="margin-bottom: 100px">
+    <h1 style="margin-top: 50px; margin-bottom: 50px;"><b>SKILLS</b></h1>
+    <h3 style="margin-left: 20px;">PROGRAMMING LANGUAGES & TOOLS</h3>
+    <hr>
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8">
+        <image src="https://png2.cleanpng.com/sh/aab12745fc2d4dce4e4c4ba8ac5786a8/L0KzQYm3VMI2N5hxj5H0aYP2gLBuTfN0e2Qye9N8Y3HnebBuTgN1gZ1qReVxZXX3g37zjBdwNZl5hd42NXHoQLa8WMdmP2U6SKk3Nkm6RoO9U8cyPWM5TqoDMka2SYWAU75xdpg=/kisspng-css3-cascading-style-sheets-logo-html-5ae0e587e74507.6976263715246882639473.png" style="width: 100px; height: 100px; margin: 10px"></image>
+        <image src="https://png2.cleanpng.com/sh/f80b30e809f9221914e14e85d002c852/L0KzQYm3U8IxN6hufZH0aYP2gLBuTfh1dZ0yj9drLXTog7rujr10a5JxedR1ZT35dbT7jCIub6NmiNpyY4Owh7F5jPQuf5ppRdp9bXy4PbrqjB4ucJUyTdNrMHO7RbS6V8diaWEzSKg8OUO1RYe4VcIyPWQ6SKgDMkK6Q3B3jvc=/kisspng-html-web-design-scalable-vector-graphics-world-wid-html5-icon-hd-5ab0c85c377aa0.0639325615215350682273.png" style="width: 90px; height: 90px; margin: 10px"></image>
+        <image src="https://png2.cleanpng.com/sh/2e1e9644cf0e60f035ad3c092d81e8ef/L0KzQYm3VsI6N5p3ipH0aYP2gLBuTfpifpJ4eARycISwgMP2hCJidZ5qip95cnBqgrL0jflvb15xedDwdXHqdX7qjB1xfaVqRdD4ZHWwesS0VfI0PZdoetY6NEO3RIa1UMY5OmU7S6I6NUOzQoe7V8Y2OGk3UJD5bne=/kisspng-javascript-programmer-programming-language-compute-node-js-5b35fcbd143445.0682463015302647650828.png" style="width: 105px; height: 105px; margin: 10px"></image>
+        <image src="https://digitalresearch.bsu.edu/studentsymposium2021/files/original/0819f70bc2e7a72233fa0c02fb8b77cc.png" style="height: 90px; width: 90px; margin: 10px"></image>
+        <image src="https://png2.cleanpng.com/sh/b144a721a7d48d4e00cdeba6e4e4be9c/L0KzQYm3VME4N518j5H0aYP2gLBuTgB6fJl0hp9sb33zhcXskr1qa5Dzi599dYTygrrojL1kd551jeZucj3zgrFukvFudZpzReV4Y3nkfH7wgB9ve146edYAY3Plcoe3hMM3OV88TaIDM0S0R4K8UsM6PmI1Sas8OUa5PsH1h5==/kisspng-python-computer-icons-tutorial-computer-programmin-social-icons-5ad5ccbb60d361.7508341715239610193966.png" style="width: 100px; height: 100px; margin: 10px"></image>
+        <image src="https://png2.cleanpng.com/sh/5e4fb0a7c2e8aecb5a325f9d05dcfbcb/L0KzQYm3VMA1N5RtfZH0aYP2gLBuTf16e6JxgZ95aICwdLL7gfJie5YyhNt3dYiwc7Frif5oNWZme6YDMkTkQraBVBUxNmU4T6c5NkK8QYa5UsgzP2k6SKMEMEaxgLBu/kisspng-mysqli-php-database-linux-coding-5ac4824a2e87e0.4375062915228278501906.png" style="width: 130px; height: 100px; margin: 10px;"></image>
+        <image src="https://png2.cleanpng.com/sh/e40edfd63e79e3db006d53c862103b91/L0KzQYm3U8I4N5lpfZH0aYP2gLBuTgBzd5h3ed92aX7qPb3ojvd2aZhqRdV4bYD4hLL7if9vaZ0yiAZqdHn2hLrqk71ze6V6Rd5qbnf4cbjsTcViapI2SNg5OELkSYG9TsIxOGkASqU5MUW1QoK7U8Q4OmY4TaQ3cH7q/kisspng-programming-language-computational-statistics-rstu-language-5aba10f082a906.2008923015221434725352.png" style="width: 100px; height: 80px; margin: 10px"></image>
+      </div>
+      <div class="col-sm-2"></div>
+    </div>
+    <h3 style="margin-top:100px; margin-left: 20px;">WORKFLOW</h3>
+    <hr>
+    <ul type="square">
+      <li>Mobile-First, Responsive Design with Bootstrap 5</li>
+      <li>Data Engineering, Analysis, and Collection(Crawling)</li>
+      <li>Machine Learning (especially CNN)</li>
+    </ul>
+  </div>
+
+<div class="'container p-5" id="portfolio">
+  <h1 style="margin-top: 50px; margin-bottom: 50px; text-align: right;"><b>PORTFOLIO</b></h1>
+    <h4 style="text-align: right">01.<br><b>checkmovie</b><br><br>2022.09 DALC 팀별 프로젝트 최우수상 수상작
+    <br>영화 취향 분석 바탕의 도서 추천시스템<br>시각화 및 AI담당</h4>
+  <p style="float: right">
+    <a href="https://www.youtube.com/watch?v=dmrfSdXHNr8&t=1s">
+      <image src="data:image/png;base64,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"
+    style="margin-top: 40px; margin-bottom: 40px; width:80px; height: 80px; display: inline-block;" data-bs-toggle="tooltip" title="시연 영상 보러가기">
+    </image></a>
+    <a href="https://github.com/yoojinlee-hub/DALC_3_3">
+      <image src="https://cdn-icons-png.flaticon.com/512/25/25231.png" style="margin-top: 40px; margin-bottom: 40px; margin-left: 20px;
+      width:70px; height: 70px; display: inline-block;" data-bs-toggle="tooltip" title="Move to Github">
+      </image></a></p>
+
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="3" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="4" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="5" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="6" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="7" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="8" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="9" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="10" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="11" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="12" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="13" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="14" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="15" class="active"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://i.ibb.co/6v0hLX8/1.png" class="d-block" style="width:100%;">
+          <div class="carousel-caption"><p>Slide_01</p></div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.ibb.co/YXWSPrV/2.png" class="d-block" style="width:100%">
+          <div class="carousel-caption"><p>Slide_02</p></div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.ibb.co/Jx84K6p/3.png" class="d-block" style="width:100%">
+          <div class="carousel-caption"><p>Slide_02</p></div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.ibb.co/DgR46SK/4.png" class="d-block" style="width:100%;">
+          <div class="carousel-caption"><p>Slide_01</p></div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.ibb.co/TgKSGr9/5.png" class="d-block" style="width:100%">
+          <div class="carousel-caption"><p>Slide_02</p></div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.ibb.co/w60g70R/6.png" class="d-block" style="width:100%">
+          <div class="carousel-caption"><p>Slide_02</p></div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.ibb.co/rcCTB9y/7.png" class="d-block" style="width:100%;">
+          <div class="carousel-caption"><p>Slide_01</p></div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.ibb.co/6wJxXSG/8.png" class="d-block" style="width:100%">
+          <div class="carousel-caption"><p>Slide_02</p></div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.ibb.co/BfPhTLV/9.png" class="d-block" style="width:100%">
+          <div class="carousel-caption"><p>Slide_02</p></div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.ibb.co/qYh3trR/10.png" class="d-block" style="width:100%;">
+          <div class="carousel-caption"><p>Slide_01</p></div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.ibb.co/NrQryk1/11.png" class="d-block" style="width:100%">
+          <div class="carousel-caption"><p>Slide_02</p></div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.ibb.co/2gFKGBx/12.png" class="d-block" style="width:100%">
+          <div class="carousel-caption"><p>Slide_02</p></div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.ibb.co/wpHSYjD/13.png" class="d-block" style="width:100%">
+          <div class="carousel-caption"><p>Slide_02</p></div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.ibb.co/xFLcP9R/14.png" class="d-block" style="width:100%">
+          <div class="carousel-caption"><p>Slide_02</p></div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.ibb.co/6W74KQb/15.png" class="d-block" style="width:100%">
+          <div class="carousel-caption"><p>Slide_02</p></div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.ibb.co/tsjbMnv/16.png" class="d-block" style="width:100%">
+          <div class="carousel-caption"><p>Slide_02</p></div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span></button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span></button>
+    </div>
+
+</div>
 
 </body>
 </html>
